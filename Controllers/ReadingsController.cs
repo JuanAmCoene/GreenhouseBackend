@@ -1,0 +1,65 @@
+﻿using GreenhouseBackend.Models;
+using GreenhouseBackend.Services;
+using Microsoft.AspNetCore.Mvc;
+
+
+namespace GreenhouseBackend.Controllers
+{
+    [ApiController]
+    [Route("api/[controller]")]
+    public class ReadingsController
+    {
+        private readonly ReadingsService _readingsService;
+        public ReadingsController(ReadingsService readingsService) =>
+            _readingsService = readingsService;
+        [HttpGet]
+        public async Task<List<Reading>> Get() =>
+            await _readingsService.GetAsync();
+
+        [HttpGet("{id:length(24)}")]
+        public async Task<ActionResult<Reading>> Get(string id)
+        {
+            var reading = await _readingsService.GetAsync(id);
+            if (reading is null)
+            {
+                return new NotFoundResult();
+            }
+            return reading;
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Post(Reading newReading)
+        {
+            await _readingsService.CreateAsync(newReading);
+            return new CreatedAtActionResult(
+                nameof(Get),
+                "Readings",
+                new { id = newReading.Id },
+                newReading);
+        }
+        [HttpPut("{id:length(24)}")]
+
+        public async Task<IActionResult> Update(string id, Reading updatedReading)
+        {
+            var reading = await _readingsService.GetAsync(id);
+            if (reading is null)
+            {
+                return new NotFoundResult();
+            }
+            updatedReading.Id = reading.Id;
+            await _readingsService.UpdateAsync(id, updatedReading);
+            return new NoContentResult();
+        }
+        [HttpDelete("{id:length(24)}")]
+        public async Task<IActionResult> Delete(string id)
+        {
+            var reading = await _readingsService.GetAsync(id);
+            if (reading is null)
+            {
+                return new NotFoundResult();
+            }
+            await _readingsService.RemoveAsync(id);
+            return new NoContentResult();
+        }
+    }
+}
