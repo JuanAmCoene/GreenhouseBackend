@@ -1,4 +1,4 @@
-{
+﻿{
   "GreenHouseDatabase": {
     "ConnectionString": "mongodb://localhost:27017",
     "DatabaseName": "GreenHouse",

@@ -7,7 +7,7 @@ namespace GreenhouseBackend.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class ReadingsController : ControllerBase
+    public class ReadingsController
     {
         private readonly ReadingsService _readingsService;
         public ReadingsController(ReadingsService readingsService) =>

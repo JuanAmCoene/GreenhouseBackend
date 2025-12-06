@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GreenhouseBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e15543e3596205672b371f4ae90c9985d196281c")]
 [assembly: System.Reflection.AssemblyProductAttribute("GreenhouseBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GreenhouseBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
