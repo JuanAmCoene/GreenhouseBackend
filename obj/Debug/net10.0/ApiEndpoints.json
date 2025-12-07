@@ -1,0 +1,101 @@
+[
+  {
+    "ContainingType": "GreenhouseBackend.Controllers.ReadingsController",
+    "Method": "Get",
+    "RelativePath": "api/Readings",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[GreenhouseBackend.Models.Reading, GreenhouseBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GreenhouseBackend.Controllers.ReadingsController",
+    "Method": "Post",
+    "RelativePath": "api/Readings",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newReading",
+        "Type": "GreenhouseBackend.Models.Reading",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GreenhouseBackend.Controllers.ReadingsController",
+    "Method": "Get",
+    "RelativePath": "api/Readings/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GreenhouseBackend.Models.Reading",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GreenhouseBackend.Controllers.ReadingsController",
+    "Method": "Update",
+    "RelativePath": "api/Readings/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedReading",
+        "Type": "GreenhouseBackend.Models.Reading",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GreenhouseBackend.Controllers.ReadingsController",
+    "Method": "Delete",
+    "RelativePath": "api/Readings/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

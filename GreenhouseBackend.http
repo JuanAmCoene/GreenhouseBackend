@@ -1,6 +1,47 @@
-@GreenhouseBackend_HostAddress = http://localhost:5185
+@GreenhouseBackend_HostAddress = https://localhost:7262
 
 GET {{GreenhouseBackend_HostAddress}}/weatherforecast/
 Accept: application/json
+
+###
+
+GET {{GreenhouseBackend_HostAddress}}/api/readings
+
+###
+
+@id=69349b16de7bfb70431e2622
+GET {{GreenhouseBackend_HostAddress}}/api/readings/{id:length(24)}?id={{id}}
+
+###
+
+GET {{GreenhouseBackend_HostAddress}}/api/readings
+
+###
+
+GET {{GreenhouseBackend_HostAddress}}/api/readings
+
+###
+
+GET {{GreenhouseBackend_HostAddress}}/api/readings/{id:length(24)}?id={{id}}
+
+###
+
+GET {{GreenhouseBackend_HostAddress}}/api/readings
+
+###
+
+GET {{GreenhouseBackend_HostAddress}}/api/readings/{id:length(24)}?id={{id}}
+
+###
+
+GET {{GreenhouseBackend_HostAddress}}/api/Readings/{{id}}
+
+###
+
+GET {{GreenhouseBackend_HostAddress}}/api/readings/{id:length(24)}?id={{69349b16de7bfb70431e2622}
+
+###
+
+GET {{GreenhouseBackend_HostAddress}}/api/Readings/{{69349b16de7bfb70431e2622}}
 
 ###

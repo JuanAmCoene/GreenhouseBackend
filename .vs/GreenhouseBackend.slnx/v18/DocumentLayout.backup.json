@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "D:\\OneDrive-STUDENT\\OneDrive - Hogeschool VIVES\\VIVES\\Mobile IOT2\\Opdracht 3\\GreenhouseBackend\\GreenhouseBackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C446B55E-538C-50C8-6588-54234A5B59C1}|GreenhouseBackend.csproj|d:\\onedrive-student\\onedrive - hogeschool vives\\vives\\mobile iot2\\opdracht 3\\greenhousebackend\\greenhousebackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C446B55E-538C-50C8-6588-54234A5B59C1}|GreenhouseBackend.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{C446B55E-538C-50C8-6588-54234A5B59C1}|GreenhouseBackend.csproj|d:\\onedrive-student\\onedrive - hogeschool vives\\vives\\mobile iot2\\opdracht 3\\greenhousebackend\\greenhousebackend\\greenhousebackend.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{C446B55E-538C-50C8-6588-54234A5B59C1}|GreenhouseBackend.csproj|solutionrelative:greenhousebackend.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C446B55E-538C-50C8-6588-54234A5B59C1}|GreenhouseBackend.csproj|d:\\onedrive-student\\onedrive - hogeschool vives\\vives\\mobile iot2\\opdracht 3\\greenhousebackend\\greenhousebackend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C446B55E-538C-50C8-6588-54234A5B59C1}|GreenhouseBackend.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C446B55E-538C-50C8-6588-54234A5B59C1}|GreenhouseBackend.csproj|d:\\onedrive-student\\onedrive - hogeschool vives\\vives\\mobile iot2\\opdracht 3\\greenhousebackend\\greenhousebackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C446B55E-538C-50C8-6588-54234A5B59C1}|GreenhouseBackend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C446B55E-538C-50C8-6588-54234A5B59C1}|GreenhouseBackend.csproj|d:\\onedrive-student\\onedrive - hogeschool vives\\vives\\mobile iot2\\opdracht 3\\greenhousebackend\\greenhousebackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C446B55E-538C-50C8-6588-54234A5B59C1}|GreenhouseBackend.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C446B55E-538C-50C8-6588-54234A5B59C1}|GreenhouseBackend.csproj|d:\\onedrive-student\\onedrive - hogeschool vives\\vives\\mobile iot2\\opdracht 3\\greenhousebackend\\greenhousebackend\\controllers\\readingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,50 +49,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ReadingsController.cs",
-              "DocumentMoniker": "D:\\OneDrive-STUDENT\\OneDrive - Hogeschool VIVES\\VIVES\\Mobile IOT2\\Opdracht 3\\GreenhouseBackend\\GreenhouseBackend\\Controllers\\ReadingsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ReadingsController.cs",
-              "ToolTip": "D:\\OneDrive-STUDENT\\OneDrive - Hogeschool VIVES\\VIVES\\Mobile IOT2\\Opdracht 3\\GreenhouseBackend\\GreenhouseBackend\\Controllers\\ReadingsController.cs",
-              "RelativeToolTip": "Controllers\\ReadingsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T21:57:32.471Z",
+              "DocumentIndex": 1,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\OneDrive-STUDENT\\OneDrive - Hogeschool VIVES\\VIVES\\Mobile IOT2\\Opdracht 3\\GreenhouseBackend\\GreenhouseBackend\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "D:\\OneDrive-STUDENT\\OneDrive - Hogeschool VIVES\\VIVES\\Mobile IOT2\\Opdracht 3\\GreenhouseBackend\\GreenhouseBackend\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-07T11:07:20.445Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "GreenhouseBackend.http",
+              "DocumentMoniker": "D:\\OneDrive-STUDENT\\OneDrive - Hogeschool VIVES\\VIVES\\Mobile IOT2\\Opdracht 3\\GreenhouseBackend\\GreenhouseBackend\\GreenhouseBackend.http",
+              "RelativeDocumentMoniker": "GreenhouseBackend.http",
+              "ToolTip": "D:\\OneDrive-STUDENT\\OneDrive - Hogeschool VIVES\\VIVES\\Mobile IOT2\\Opdracht 3\\GreenhouseBackend\\GreenhouseBackend\\GreenhouseBackend.http",
+              "RelativeToolTip": "GreenhouseBackend.http",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-12-07T10:50:58.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\OneDrive-STUDENT\\OneDrive - Hogeschool VIVES\\VIVES\\Mobile IOT2\\Opdracht 3\\GreenhouseBackend\\GreenhouseBackend\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\OneDrive-STUDENT\\OneDrive - Hogeschool VIVES\\VIVES\\Mobile IOT2\\Opdracht 3\\GreenhouseBackend\\GreenhouseBackend\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-06T21:34:38.003Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "ReadingsController.cs",
+              "DocumentMoniker": "D:\\OneDrive-STUDENT\\OneDrive - Hogeschool VIVES\\VIVES\\Mobile IOT2\\Opdracht 3\\GreenhouseBackend\\GreenhouseBackend\\Controllers\\ReadingsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ReadingsController.cs",
+              "ToolTip": "D:\\OneDrive-STUDENT\\OneDrive - Hogeschool VIVES\\VIVES\\Mobile IOT2\\Opdracht 3\\GreenhouseBackend\\GreenhouseBackend\\Controllers\\ReadingsController.cs",
+              "RelativeToolTip": "Controllers\\ReadingsController.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAmwD0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T21:57:32.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\OneDrive-STUDENT\\OneDrive - Hogeschool VIVES\\VIVES\\Mobile IOT2\\Opdracht 3\\GreenhouseBackend\\GreenhouseBackend\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "D:\\OneDrive-STUDENT\\OneDrive - Hogeschool VIVES\\VIVES\\Mobile IOT2\\Opdracht 3\\GreenhouseBackend\\GreenhouseBackend\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-12-06T21:27:29.135Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "plan-2f0174be-72b3-4826-9ac2-0a2e611fa4a8.md",
               "DocumentMoniker": "C:\\Users\\Juani\\AppData\\Local\\Temp\\VisualStudio\\copilot-vs\\plan-2f0174be-72b3-4826-9ac2-0a2e611fa4a8.md",
               "ToolTip": "C:\\Users\\Juani\\AppData\\Local\\Temp\\VisualStudio\\copilot-vs\\plan-2f0174be-72b3-4826-9ac2-0a2e611fa4a8.md [Read Only]",
@@ -95,7 +129,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Reading.cs",
               "DocumentMoniker": "D:\\OneDrive-STUDENT\\OneDrive - Hogeschool VIVES\\VIVES\\Mobile IOT2\\Opdracht 3\\GreenhouseBackend\\GreenhouseBackend\\Models\\Reading.cs",
               "RelativeDocumentMoniker": "Models\\Reading.cs",
@@ -103,12 +137,11 @@
               "RelativeToolTip": "Models\\Reading.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T21:19:22.818Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T21:19:22.818Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "ReadingsService.cs",
               "DocumentMoniker": "D:\\OneDrive-STUDENT\\OneDrive - Hogeschool VIVES\\VIVES\\Mobile IOT2\\Opdracht 3\\GreenhouseBackend\\GreenhouseBackend\\Services\\ReadingsService.cs",
               "RelativeDocumentMoniker": "Services\\ReadingsService.cs",
@@ -120,7 +153,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "GreenhouseBackend.csproj",
               "DocumentMoniker": "D:\\OneDrive-STUDENT\\OneDrive - Hogeschool VIVES\\VIVES\\Mobile IOT2\\Opdracht 3\\GreenhouseBackend\\GreenhouseBackend\\GreenhouseBackend.csproj",
               "RelativeDocumentMoniker": "GreenhouseBackend.csproj",
@@ -132,7 +165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "GreenHouseDatabaseSettings.cs",
               "DocumentMoniker": "D:\\OneDrive-STUDENT\\OneDrive - Hogeschool VIVES\\VIVES\\Mobile IOT2\\Opdracht 3\\GreenhouseBackend\\GreenhouseBackend\\Models\\GreenHouseDatabaseSettings.cs",
               "RelativeDocumentMoniker": "Models\\GreenHouseDatabaseSettings.cs",

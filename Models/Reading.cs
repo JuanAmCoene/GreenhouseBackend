@@ -10,8 +10,8 @@ namespace GreenhouseBackend.Models
         [BsonRepresentation(BsonType.ObjectId)]
         public string? Id { get; set; }
 
-        [BsonElement("Name")]
-        [JsonPropertyName("Name")]
+        [BsonElement("AirTemperature")]
+        [JsonPropertyName("AirTemperature")]
         public decimal AirTemperature { get; set; }
 
         public decimal GroundHumidity { get; set; }
