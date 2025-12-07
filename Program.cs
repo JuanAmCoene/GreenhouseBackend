@@ -8,6 +8,17 @@ builder.Services.Configure<GreenHouseDatabaseSettings>(
     builder.Configuration.GetSection("GreenHouseDatabase"));
 builder.Services.AddSingleton<ReadingsService>();
 
+// Add CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAngular", policy =>
+    {
+        policy.WithOrigins("http://localhost:57739", "http://localhost:4200")
+              .AllowAnyMethod()
+              .AllowAnyHeader();
+    });
+});
+
 builder.Services.AddControllers()
 .AddJsonOptions(options =>
 {
@@ -30,6 +41,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("AllowAngular");
 
 app.UseAuthorization();
 
