@@ -37,6 +37,29 @@ namespace GreenhouseBackend.Controllers
                 new { id = newReading.Id },
                 newReading);
         }
+
+        [HttpPost("webhook/ttn")]
+        public async Task<IActionResult> TtnWebhook([FromBody] TtnWebhookPayload payload)
+        {
+            if (payload?.UplinkMessage?.DecodedPayload == null)
+            {
+                return BadRequest("Invalid TTN payload");
+            }
+
+            var decodedPayload = payload.UplinkMessage.DecodedPayload;
+            
+            var newReading = new Reading
+            {
+                AirTemperature = decodedPayload.AirTemperature,
+                GroundHumidity = decodedPayload.GroundHumidity,
+                WaterTank = decodedPayload.WaterTank,
+                Battery = decodedPayload.Battery
+            };
+
+            await _readingsService.CreateAsync(newReading);
+            
+            return Ok(new { message = "Reading created successfully", id = newReading.Id });
+        }
         [HttpPut("{id:length(24)}")]
 
         public async Task<IActionResult> Update(string id, Reading updatedReading)
