@@ -1,6 +1,8 @@
 ﻿using GreenhouseBackend.Models;
 using GreenhouseBackend.Services;
+using GreenhouseBackend.Hubs;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR;
 
 
 namespace GreenhouseBackend.Controllers
@@ -10,8 +12,13 @@ namespace GreenhouseBackend.Controllers
     public class ReadingsController : ControllerBase
     {
         private readonly ReadingsService _readingsService;
-        public ReadingsController(ReadingsService readingsService) =>
+        private readonly IHubContext<ReadingsHub> _hubContext;
+
+        public ReadingsController(ReadingsService readingsService, IHubContext<ReadingsHub> hubContext)
+        {
             _readingsService = readingsService;
+            _hubContext = hubContext;
+        }
         [HttpGet]
         public async Task<List<Reading>> Get() =>
             await _readingsService.GetAsync();
@@ -31,6 +38,10 @@ namespace GreenhouseBackend.Controllers
         public async Task<IActionResult> Post(Reading newReading)
         {
             await _readingsService.CreateAsync(newReading);
+            
+            // Broadcast to all connected SignalR clients
+            await _hubContext.Clients.All.SendAsync("ReceiveReading", newReading);
+            
             return new CreatedAtActionResult(
                 nameof(Get),
                 "Readings",
@@ -57,6 +68,9 @@ namespace GreenhouseBackend.Controllers
             };
 
             await _readingsService.CreateAsync(newReading);
+            
+            // Broadcast to all connected SignalR clients
+            await _hubContext.Clients.All.SendAsync("ReceiveReading", newReading);
             
             return Ok(new { message = "Reading created successfully", id = newReading.Id });
         }

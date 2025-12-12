@@ -1,5 +1,6 @@
 using GreenhouseBackend.Models;
 using GreenhouseBackend.Services;
+using GreenhouseBackend.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,9 +16,12 @@ builder.Services.AddCors(options =>
     {
         policy.WithOrigins("http://localhost:57739", "http://localhost:4200")
               .AllowAnyMethod()
-              .AllowAnyHeader();
+              .AllowAnyHeader()
+              .AllowCredentials(); // Required for SignalR
     });
 });
+
+builder.Services.AddSignalR();
 
 builder.Services.AddControllers()
 .AddJsonOptions(options =>
@@ -47,5 +51,6 @@ app.UseCors("AllowAngular");
 app.UseAuthorization();
 
 app.MapControllers();
+app.MapHub<ReadingsHub>("/hubs/readings");
 
 app.Run();
