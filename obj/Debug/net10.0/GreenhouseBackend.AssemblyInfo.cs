@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GreenhouseBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b3f32ca1efd86f4b15e4ccdce974738d476731de")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a529621bba87105c2b32c07fbad654c6e36d3377")]
 [assembly: System.Reflection.AssemblyProductAttribute("GreenhouseBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GreenhouseBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
