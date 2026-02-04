@@ -14,7 +14,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAngular", policy =>
     {
-        policy.WithOrigins("http://localhost:57739", "http://localhost:4200")
+        policy.WithOrigins("http://localhost:57739", "http://localhost:4200", "http://10.20.244.34:7262", "http://10.20.244.34")
               .AllowAnyMethod()
               .AllowAnyHeader()
               .AllowCredentials(); // Required for SignalR
@@ -52,5 +52,7 @@ app.UseAuthorization();
 
 app.MapControllers();
 app.MapHub<ReadingsHub>("/hubs/readings");
+
+app.Urls.Add("http://0.0.0.0:7262");
 
 app.Run();
